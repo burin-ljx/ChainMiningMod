@@ -7,17 +7,6 @@ plugins {
 group = properties["maven_group"] as String
 version = properties["mod_version"] as String
 
-repositories {
-    maven {
-        name = "Ithundxr Maven"
-        url = uri("https://maven.ithundxr.dev/snapshots")
-    }
-}
-
-dependencies {
-    implementation(libs.registrate)
-}
-
 neoForge {
     version = libs.versions.neoForge.get()
 
