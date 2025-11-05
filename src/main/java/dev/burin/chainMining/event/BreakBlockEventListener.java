@@ -117,7 +117,6 @@ public class BreakBlockEventListener {
                             .map((item) -> new ItemEntity(level, player.position().x, player.position().y, player.position().z, item))
                             .forEach(level::addFreshEntity);
                     }
-//                    block.playerDestroy(level, player, pos, state1, blockEntity, stack1);
                 }
 
                 if (stack.isEmpty() && !stack1.isEmpty()) {
